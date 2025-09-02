@@ -1,70 +1,229 @@
-# Getting Started with Create React App
+# Vido - Dating App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive dating application built with React, TypeScript, and Tailwind CSS. Features a comprehensive multi-step form for user onboarding and profile creation.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Multi-step Form**: Interactive form with chapters and screens for comprehensive user profiling
+- **Modern UI**: Built with Radix UI components and Tailwind CSS for a polished experience
+- **TypeScript**: Full type safety throughout the application
+- **Responsive Design**: Works seamlessly across desktop and mobile devices
+- **Form Validation**: Client-side validation with customizable rules
+- **Toast Notifications**: User feedback with Sonner toast notifications
+- **React Router**: Client-side routing for navigation
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI primitives
+- **Routing**: React Router DOM
+- **State Management**: React Query (TanStack Query)
+- **Form Handling**: React Hook Form
+- **Build Tool**: CRACO (Create React App Configuration Override)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📋 Prerequisites
 
-### `npm test`
+Before running this project, make sure you have the following installed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js** (version 16 or higher)
+- **npm** (comes with Node.js)
 
-### `npm run build`
+You can check your versions by running:
+```bash
+node --version
+npm --version
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Clone the Repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone <your-repository-url>
+cd vido
+```
 
-### `npm run eject`
+### 2. Install Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will install all the required dependencies including:
+- React and React DOM
+- TypeScript
+- Tailwind CSS
+- Radix UI components
+- React Router DOM
+- React Query
+- And many more...
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3. Start the Development Server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+The application will open in your browser at `http://localhost:3000`. The page will automatically reload when you make changes to the code.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. Build for Production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
 
-### Code Splitting
+This creates an optimized production build in the `build` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📁 Project Structure
 
-### Analyzing the Bundle Size
+```
+vido/
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # Reusable UI components
+│   │   ├── form/          # Form-specific components
+│   │   └── UI/            # Base UI components (buttons, inputs, etc.)
+│   ├── config/            # Configuration files
+│   │   └── formConfig.ts  # Form structure and questions
+│   ├── hooks/             # Custom React hooks
+│   ├── lib/               # Utility functions
+│   ├── App.tsx            # Main application component
+│   ├── Home.tsx           # Home page component
+│   └── index.tsx          # Application entry point
+├── package.json           # Dependencies and scripts
+├── tailwind.config.js     # Tailwind CSS configuration
+├── tsconfig.json          # TypeScript configuration
+└── craco.config.js        # CRACO configuration
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🎯 Available Scripts
 
-### Making a Progressive Web App
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm run eject` - Ejects from Create React App (one-way operation)
+- `npm run tailwind:init` - Initializes Tailwind CSS configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔧 Configuration
 
-### Advanced Configuration
+### Form Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The dating form is configured in `src/config/formConfig.ts`. You can customize:
 
-### Deployment
+- Form title and subtitle
+- Chapters and screens structure
+- Question types (text, radio, checkbox)
+- Validation rules
+- Required fields
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Tailwind CSS
 
-### `npm run build` fails to minify
+The project uses Tailwind CSS for styling. Configuration is in `tailwind.config.js`. The design system includes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Custom color palette
+- Typography scales
+- Component variants
+- Responsive breakpoints
+
+## 🎨 UI Components
+
+The app uses a comprehensive set of UI components built on Radix UI:
+
+- **Form Components**: Input, Textarea, Checkbox, Radio Group
+- **Layout Components**: Card, Button, Progress
+- **Feedback Components**: Toast, Tooltip
+- **Navigation Components**: Various interactive elements
+
+## 📱 Features Overview
+
+### Welcome Page
+- Clean landing page with call-to-action
+- Responsive design
+
+### Multi-Step Form
+- **Chapter 1: The Basics**
+  - Personal information (name, age)
+  - Location and gender identity
+
+- **Chapter 2: What You're Looking For**
+  - Relationship preferences
+  - Age and distance preferences
+
+- **Chapter 3: Show Your Personality**
+  - Interests and hobbies
+  - Lifestyle choices
+  - Personal bio
+
+### Form Success
+- Completion confirmation
+- Option to start over
+
+## 🚀 Deployment
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The build folder contains the production-ready files that can be deployed to any static hosting service.
+
+### Deploy to Netlify
+
+1. Build the project: `npm run build`
+2. Drag and drop the `build` folder to Netlify
+3. Your app will be live!
+
+### Deploy to Vercel
+
+1. Install Vercel CLI: `npm i -g vercel`
+2. Run: `vercel`
+3. Follow the prompts
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🆘 Troubleshooting
+
+### Common Issues
+
+**Port already in use:**
+```bash
+# Kill the process using port 3000
+lsof -ti:3000 | xargs kill -9
+```
+
+**Node modules issues:**
+```bash
+# Clear npm cache and reinstall
+npm cache clean --force
+rm -rf node_modules package-lock.json
+npm install
+```
+
+**TypeScript errors:**
+- Make sure all dependencies are properly installed
+- Check that your TypeScript version is compatible
+- Restart your development server
+
+## 📞 Support
+
+If you encounter any issues or have questions, please:
+
+1. Check the troubleshooting section above
+2. Search existing issues in the repository
+3. Create a new issue with detailed information about your problem
+
+---
+
+**Happy coding! 🎉**
