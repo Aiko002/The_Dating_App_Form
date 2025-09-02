@@ -2,7 +2,7 @@
 
 A modern, responsive dating application built with React, TypeScript, and Tailwind CSS. Features a comprehensive multi-step form for user onboarding and profile creation.
 
-## 🚀 Features
+## Features
 
 - **Multi-step Form**: Interactive form with chapters and screens for comprehensive user profiling
 - **Modern UI**: Built with Radix UI components and Tailwind CSS for a polished experience
@@ -12,7 +12,7 @@ A modern, responsive dating application built with React, TypeScript, and Tailwi
 - **Toast Notifications**: User feedback with Sonner toast notifications
 - **React Router**: Client-side routing for navigation
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React 18, TypeScript
 - **Styling**: Tailwind CSS
@@ -22,7 +22,7 @@ A modern, responsive dating application built with React, TypeScript, and Tailwi
 - **Form Handling**: React Hook Form
 - **Build Tool**: CRACO (Create React App Configuration Override)
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before running this project, make sure you have the following installed:
 
@@ -35,7 +35,7 @@ node --version
 npm --version
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
@@ -75,7 +75,7 @@ npm run build
 
 This creates an optimized production build in the `build` folder.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 vido/
@@ -97,7 +97,7 @@ vido/
 └── craco.config.js        # CRACO configuration
 ```
 
-## 🎯 Available Scripts
+## Available Scripts
 
 - `npm start` - Runs the app in development mode
 - `npm run build` - Builds the app for production
@@ -105,7 +105,7 @@ vido/
 - `npm run eject` - Ejects from Create React App (one-way operation)
 - `npm run tailwind:init` - Initializes Tailwind CSS configuration
 
-## 🔧 Configuration
+## Configuration
 
 ### Form Configuration
 
@@ -126,7 +126,7 @@ The project uses Tailwind CSS for styling. Configuration is in `tailwind.config.
 - Component variants
 - Responsive breakpoints
 
-## 🎨 UI Components
+## UI Components
 
 The app uses a comprehensive set of UI components built on Radix UI:
 
@@ -135,7 +135,7 @@ The app uses a comprehensive set of UI components built on Radix UI:
 - **Feedback Components**: Toast, Tooltip
 - **Navigation Components**: Various interactive elements
 
-## 📱 Features Overview
+## Features Overview
 
 ### Welcome Page
 - Clean landing page with call-to-action
@@ -159,7 +159,7 @@ The app uses a comprehensive set of UI components built on Radix UI:
 - Completion confirmation
 - Option to start over
 
-## 🚀 Deployment
+## Deployment
 
 ### Build for Production
 
@@ -181,7 +181,7 @@ The build folder contains the production-ready files that can be deployed to any
 2. Run: `vercel`
 3. Follow the prompts
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature-name`
@@ -189,11 +189,9 @@ The build folder contains the production-ready files that can be deployed to any
 4. Push to the branch: `git push origin feature-name`
 5. Submit a pull request
 
-## 📄 License
 
-This project is licensed under the MIT License.
 
-## 🆘 Troubleshooting
+##Troubleshooting
 
 ### Common Issues
 
@@ -216,7 +214,7 @@ npm install
 - Check that your TypeScript version is compatible
 - Restart your development server
 
-## 📞 Support
+## Support
 
 If you encounter any issues or have questions, please:
 
@@ -226,4 +224,3 @@ If you encounter any issues or have questions, please:
 
 ---
 
-**Happy coding! 🎉**
